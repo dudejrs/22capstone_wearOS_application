@@ -1,0 +1,1 @@
+# 22capstone_wearOS_application
