@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="positive_yellow">#febe10</string>
+    <string name="negative_yellow">#fcaf17</string>
+    <string name="kb_grey">#666666</string>
+    <string name="kb_dark_grey">#54504a</string>
+    <string name="kb_gold">#cc9966</string>
+    <string name="grey">#999999</string>
+    <string name="highlight_blue">6699cc</string>
+</resources>

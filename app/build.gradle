@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.capstone_design_wear"
+        minSdk 30
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+//configurations {
+//    cleanedAnnotations
+//    implementation.exclude group: 'org.jetbrains' , module:'annotations'
+//}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'com.google.android.gms:play-services-wearable:17.1.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.wear:wear:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+//    implementation('androidx.room:room-compiler:2.4.2')
+    implementation('androidx.room:room-runtime:2.4.2')
+    implementation('androidx.room:room-ktx:2.4.2')
+    implementation('androidx.room:room-common:2.4.2')
+    implementation('androidx.activity:activity-compose:1.4.0')
+
+    implementation('androidx.wear.compose:compose-navigation:1.0.0-beta02')
+    implementation('androidx.wear.compose:compose-foundation:1.0.0-beta02')
+    implementation('androidx.wear.compose:compose-material:1.0.0-beta02')
+    implementation('com.android.volley:volley:1.2.1')
+
+    implementation('androidx.wear.tiles:tiles:1.0.1')
+    implementation('androidx.wear.tiles:tiles-material:1.1.0-alpha07')
+    implementation 'androidx.wear.tiles:tiles-material:1.1.0-alpha07'
+    implementation 'com.google.android.support:wearable:2.9.0'
+    implementation 'com.google.android.gms:play-services-base:18.0.1'
+    implementation 'androidx.palette:palette-ktx:1.0.0'
+    implementation 'com.google.android.material:material:1.6.0'
+    compileOnly 'com.google.android.wearable:wearable:2.9.0'
+    implementation('androidx.wear.tiles:tiles-renderer:1.0.1')
+    implementation('androidx.wear.tiles:tiles-testing:1.0.1')
+
+    implementation('androidx.palette:palette-ktx:1.0.0')
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.5.1'
+
+    kapt 'androidx.room:room-compiler:2.4.2'
+
+}

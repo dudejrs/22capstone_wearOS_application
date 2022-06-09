@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Capstone_WearOS_Applicaition</string>
+    <string name="message">Watch face tapped</string>
+    <string name="my_analog_name">My Analog</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chanel_id">com.example.capstone_design_wear.noti1</string>
+    <string name="chanel_name">\"capstone\"</string>
+
+</resources>

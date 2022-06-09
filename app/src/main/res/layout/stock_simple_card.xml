@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="150sp"
+    android:layout_height="90sp"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/stock_card"
+    android:clickable="true"
+    android:layoutMode="clipBounds"
+    android:minHeight="90sp"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="5dp"
+    android:rotation="0">
+
+    <LinearLayout
+        android:id="@+id/stockCard1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="6dp">
+
+        <TextView
+            android:id="@+id/stockName"
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/stockPrice"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:paddingHorizontal="10dp"
+            android:text="10200"
+            android:textColor="#FFCC00"
+            android:textDirection="rtl"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginBottom="8dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/stockRatio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="(3.5%)"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/gap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:paddingHorizontal="5dp"
+                android:text="3800"
+                android:textAlignment="textEnd"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/stockUpDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="1dp"
+                android:contentDescription="up or down"
+                android:src="@drawable/down" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/stockCard2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="62dp">
+
+        <TextView
+            android:id="@+id/stockCardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="평가금액"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/evalutedPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="12,300,240"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/stockUpDown2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="up or down"
+                android:src="@drawable/down" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/detail_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Button"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
